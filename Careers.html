@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="./Index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body style="background-color: #F0F1F2;">
+    <header style="display: flex;">
+      <img src="./whiteLogo.png" alt="Logo" width="100" height="50" />
+      <nav>
+        <a href="#home" onclick="showContent('home')">Home</a>
+        <a href="#about" onclick="showContent('about')">About</a>
+        <a href="#services" onclick="showContent('services')">Services</a>
+        <div class="dropdown">
+          <a href="#careers" class="dropbtn">Careers</a>
+          <div class="dropdown-content">
+            <a href="#job1" onclick="showJobDetail('job1')">Find a Job</a>
+            <a href="#job2" onclick="showJobDetail('job2')">Internships</a>
+            <a href="#job3" onclick="showJobDetail('job3')"
+              >Postdoctoral Opportunities</a
+            >
+          </div>
+        </div>
+        <a href="#contact" onclick="showContent('contact')">Contact</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <div class="search-jobs">
+        <div style="background-color: #fff;margin-bottom: 20px;">
+        <img
+          src="./banners.jpeg"
+          alt="NREL Building"
+          style="width: 100%; max-width: 800px"
+        />
+        <div class="search-bar">
+          <input type="text" placeholder="Search for jobs or keywords" />
+          <button>Search</button>
+        </div>
+    </div>
+        <div style="    display: flex;
+        width: 800px;
+    ">
+          <div class="job-list" style="width:70%"> 
+            <div class="job-item">
+              <div>
+                <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                  >Undergraduate (Year-Round) Intern - Community College
+                  Outreach</a
+                ><button> <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                    >Apply Now</a></button>
+              </div>
+              <p>Golden, CO</p>
+              <p>Posted Today</p>
+              <p>R13078</p>
+            </div>
+            <div class="job-item">
+              <div>
+                <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                  >Graduate (Year-Round) Intern - Industrial and Fuel Supply
+                  Optimization Modeling & Analysis</a
+                ><button> <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                    >Apply Now</a></button>
+              </div>
+              <p>2 Locations</p>
+              <p>Posted Today</p>
+              <p>R13097</p>
+            </div>
+            <div class="job-item">
+              <div>
+                <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                  >Transportation Communications Writer and Project Lead -
+                  Professional III</a
+                ><button> <a href="https://bhavyanalluri02.github.io/rcs.github.io/"
+                    >Apply Now</a></button>
+              </div>
+              <p>Golden, CO</p>
+              <p>Posted Today</p>
+              <p>R13107</p>
+            </div>
+          </div>
+          <div data-automation-id="sidebar" class="css-1gw0f0n" style="width:30%;margin-left:20px;background-color: #fff;padding:20px">
+            <div data-automation-id="imageSection" class="css-6qub7p">
+              <h3 id="14" class="css-1uppmgb">About Us</h3>
+              <img
+                src="./whiteLogo.png"
+                alt="Logo"
+                data-automation-id="image"
+                class="css-1mh151z"
+              />
+              <div class="css-1v3caum"></div>
+              <div dir="ltr">
+                <div class="css-vr2o4s">
+                  <div class="css-mn8qvv" tabindex="-1">
+                    <div data-automation-id="richText" class="css-1f6mlbr">
+                      <p>
+                        The National Renewable Energy Laboratory (NREL) is a
+                        leader in the U.S. Department of Energy’s effort to
+                        secure an environmentally and economically sustainable
+                        energy future. With locations in Golden and Boulder,
+                        Colorado, and a satellite office in Washington, D.C.,
+                        NREL is the primary laboratory for research,
+                        development, and deployment of renewable energy
+                        technologies in the United States.
+                      </p>
+                      
+                     
+                     
+                    </div>
+                  </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p style="margin: 0">
+        &copy;
+        <span style="padding-right: 20px"
+          >National Renewable Energy Laboratory</span
+        >2023 Your Company Name. All rights reserved.
+      </p>
+    </footer>
+
+    <!--
+    <script>
+        function showContent(section) {
+            const mainContent = document.getElementById('main-content');
+            switch(section) {
+                case 'home':
+                    mainContent.innerHTML = `
+                      
+                        <div class="row no-gutters" id="feature-container" style="display: flex; flex-flow: wrap;padding:10px 10vw;position: relative;">
+            <div class="col-lg-6">
+                   <a href="https://www.nrel.gov/news/features/2024/with-critical-systems-under-attack-new-workplace-culture-could-be-best-defense.html"><img src="./banner.jpg" class="img-fluid" alt="Four people standing in from of a data visualization on a large screen discuss their research." width="100%" height="100%"></a>
+               
+            </div>
+            
+            <div class="col-lg-6" style="background-color: #f5f5f5;">
+                   
+               <div class="feature-teaser" style="padding:2rem">
+                      
+                  <h1 style="font-weight:normal">With Critical Systems Under Attack, <strong>Workplace Culture Could Be Best Defense</strong></h1>
+                      
+                  <p>Mentoring, curricula, and immersive technology: NREL is adapting the profession of
+                     cybersecurity to meet the challenges of an evolving grid.
+                  </p>
+                      
+                  <p class="mb-0"><a href="https://www.nrel.gov/news/features/2024/with-critical-systems-under-attack-new-workplace-culture-could-be-best-defense.html" class="headerlink">Learn more</a></p>
+                  
+               </div>
+               
+            </div>
+            <div class="col-12 mb-5" style="z-index:1;background-color: #fff;padding:15px;">
+               <div class="nrel-about d-flex justify-content-lg-start justify-content-center align-items-center">
+                  <div class="row mission">
+                     <div class="col-12">
+                        <p><strong>The National Renewable Energy Laboratory (NREL) is transforming energy through research,
+                              development, commercialization, and deployment of renewable energy and energy efficiency
+                              technologies.</strong></p>
+                        <p class="nomargin mb-3"><a href="/workingwithus/index.html">Partner with us</a> to accelerate the transition of renewable energy and energy efficiency technologies
+                           to the marketplace.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                    `;
+                    break;
+                case 'about':
+                    mainContent.innerHTML = `
+                        <h1>About Us</h1>
+                        <p>Learn more about our company and values.</p>
+                    `;
+                    break;
+                case 'services':
+                    mainContent.innerHTML = `
+                        <h1>Our Services</h1>
+                        <p>Discover the services we offer to our clients.</p>
+                    `;
+                    break;
+                case 'contact':
+                    mainContent.innerHTML = `
+                        <h1>Contact Us</h1>
+                        <p>Get in touch with us for more information.</p>
+                    `;
+                    break;
+                default:
+                    mainContent.innerHTML = `
+                    <div class="row no-gutters" id="feature-container" style="display: flex; flex-flow: wrap;padding:10px 10vw;position: relative;">
+            <div class="col-lg-6">
+                   <a href="https://www.nrel.gov/news/features/2024/with-critical-systems-under-attack-new-workplace-culture-could-be-best-defense.html"><img src="./banner.jpg" class="img-fluid" alt="Four people standing in from of a data visualization on a large screen discuss their research." width="100%" height="100%"></a>
+               
+            </div>
+            
+            <div class="col-lg-6" style="background-color: #f5f5f5;">
+                   
+               <div class="feature-teaser" style="padding:2rem">
+                      
+                  <h1 style="font-weight:normal">With Critical Systems Under Attack, <strong>Workplace Culture Could Be Best Defense</strong></h1>
+                      
+                  <p>Mentoring, curricula, and immersive technology: NREL is adapting the profession of
+                     cybersecurity to meet the challenges of an evolving grid.
+                  </p>
+                      
+                  <p class="mb-0"><a href="https://www.nrel.gov/news/features/2024/with-critical-systems-under-attack-new-workplace-culture-could-be-best-defense.html" class="headerlink">Learn more</a></p>
+                  
+               </div>
+               
+            </div>
+            <div class="col-12 mb-5" style="z-index:1;background-color: #fff;padding:15px;">
+               <div class="nrel-about d-flex justify-content-lg-start justify-content-center align-items-center">
+                  <div class="row mission">
+                     <div class="col-12">
+                        <p><strong>The National Renewable Energy Laboratory (NREL) is transforming energy through research,
+                              development, commercialization, and deployment of renewable energy and energy efficiency
+                              technologies.</strong></p>
+                        <p class="nomargin mb-3"><a href="/workingwithus/index.html">Partner with us</a> to accelerate the transition of renewable energy and energy efficiency technologies
+                           to the marketplace.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                    `;
+            }
+        }
+
+        function showJobDetail(job) {
+            const mainContent = document.getElementById('main-content');
+            switch(job) {
+                case 'job1':
+                    mainContent.innerHTML = `
+                   <div class="container">
+        <div class="sidebar">
+            <a href="#">Find a Job</a>
+            <a href="#">Hiring Process</a>
+            <a href="#">Employment Policies</a>
+            <a href="#">Visas & Immigration</a>
+            <a href="#">Internships</a>
+            <a href="#">Postdoctoral Positions</a>
+            <a href="#">Workforce Development & Affiliate Programs</a>
+            <a href="#">Discover NREL</a>
+            <a href="#">Employee Recognition</a>
+        </div>
+        <div class="content">
+            <h1>Find a Job</h1>
+            <p>We're hiring! Explore our current job postings—there might be a new opportunity waiting for you.</p>
+            <div class="job-section">
+                <img src="./findjob.jpg" alt="Job Image" class="col-lg-6">
+                <div class="job-info">
+                    <h2><a href="#" onclick="showSearchJobs()">Search Jobs &rsaquo;</a></h2>
+                    <p>NREL's online recruitment tool allows individuals to apply online for open positions.</p>
+                </div>
+            </div>
+            <p>We take enormous pride in our talented staff, world-class research facilities, benefits, and results that positively impact our local, national, and global communities.</p>
+            <p>Be sure to read through our <a href="#">hiring process</a> to learn about submissions, interviews, application status, and more. Current NREL employees should apply through NREL's intranet site, theSOURCE.</p>
+            <p>Note: NREL does not accept candidate submissions from unsolicited third parties, such as recruiters or headhunters. These applications will not be considered, nor will a contractual relationship be formed by the submission.</p>
+        </div>
+    </div>
+
+                    `;
+                    break;
+                case 'job2':
+                    mainContent.innerHTML = `
+                        <h1>Job Opening 2</h1>
+                        <p>Details about Job Opening 2.</p>
+                        <a href="#careers" onclick="showContent('careers')">Back to Careers</a>
+                    `;
+                    break;
+                case 'job3':
+                    mainContent.innerHTML = `
+                        <h1>Job Opening 3</h1>
+                        <p>Details about Job Opening 3.</p>
+                        <a href="#careers" onclick="showContent('careers')">Back to Careers</a>
+                    `;
+                    break;
+                default:
+                    mainContent.innerHTML = `
+                         <div class="container">
+        <div class="sidebar">
+            <a href="#">Find a Job</a>
+            <a href="#">Hiring Process</a>
+            <a href="#">Employment Policies</a>
+            <a href="#">Visas & Immigration</a>
+            <a href="#">Internships</a>
+            <a href="#">Postdoctoral Positions</a>
+            <a href="#">Workforce Development & Affiliate Programs</a>
+            <a href="#">Discover NREL</a>
+            <a href="#">Employee Recognition</a>
+        </div>
+        <div class="content">
+            <h1>Find a Job</h1>
+            <p>We're hiring! Explore our current job postings—there might be a new opportunity waiting for you.</p>
+            <div class="job-section">
+                <img src="./findjob.jpg" alt="Job Image" class="col-lg-6">
+                <div class="job-info">
+                 <h2><a href="#" onclick="showSearchJobs()">Search Jobs &rsaquo;</a></h2>
+                    <p>NREL's online recruitment tool allows individuals to apply online for open positions.</p>
+                </div>
+            </div>
+            <p>We take enormous pride in our talented staff, world-class research facilities, benefits, and results that positively impact our local, national, and global communities.</p>
+            <p>Be sure to read through our <a href="#">hiring process</a> to learn about submissions, interviews, application status, and more. Current NREL employees should apply through NREL's intranet site, theSOURCE.</p>
+            <p>Note: NREL does not accept candidate submissions from unsolicited third parties, such as recruiters or headhunters. These applications will not be considered, nor will a contractual relationship be formed by the submission.</p>
+        </div>
+    </div>
+
+                    `;
+            }
+        }
+
+        function showSearchJobs() {
+            const mainContent = document.getElementById('main-content');
+        
+            mainContent.style.backgroundColor = '#F0F1F2';
+            mainContent.innerHTML = `
+                <div class="search-jobs">
+                    <img src="./banners.jpeg" alt="NREL Building" style="width:100%; max-width:800px;">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for jobs or keywords">
+                        <button>Search</button>
+                    </div>
+                    <div class="job-list">
+                        <div class="job-item">
+                            <div><a href="https://bhavyanalluri02.github.io/rcs.github.io/" >Undergraduate (Year-Round) Intern - Community College Outreach</a><button> Apply Now </button></div>
+                            <p>Golden, CO</p>
+                            <p>Posted Today</p>
+                            <p>R13078</p>
+                        </div>
+                        <div class="job-item">
+                           <div> <a href="https://bhavyanalluri02.github.io/rcs.github.io/">Graduate (Year-Round) Intern - Industrial and Fuel Supply Optimization Modeling & Analysis</a><button> Apply Now </button></div>
+                            <p>2 Locations</p>
+                            <p>Posted Today</p>
+                            <p>R13097</p>
+                        </div>
+                        <div class="job-item">
+                           <div> <a href="https://bhavyanalluri02.github.io/rcs.github.io/">Transportation Communications Writer and Project Lead - Professional III</a><button> Apply Now </button></div>
+                            <p>Golden, CO</p>
+                            <p>Posted Today</p>
+                            <p>R13107</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+-->
+    <!-- <script>
+        function showContent(section) {
+            const mainContent = document.getElementById('main-content');
+            switch(section) {
+                case 'home':
+                    mainContent.innerHTML = `
+                        <h1>Welcome to Our Website</h1>
+                        <p>This is the main content area where you can add your content.</p>
+                    `;
+                    break;
+                case 'about':
+                    mainContent.innerHTML = `
+                        <h1>About Us</h1>
+                        <p>Learn more about our company and values.</p>
+                    `;
+                    break;
+                case 'services':
+                    mainContent.innerHTML = `
+                        <h1>Our Services</h1>
+                        <p>Discover the services we offer to our clients.</p>
+                    `;
+                    break;
+                case 'careers':
+                    mainContent.innerHTML = `
+                        <h1>Careers</h1>
+                        <p>Explore career opportunities with us.</p>
+                        <ul>
+                            <li><a href="#job1" onclick="showJobDetail('job1')">Job Opening 1: Description</a></li>
+                            <li><a href="#job2" onclick="showJobDetail('job2')">Job Opening 2: Description</a></li>
+                            <li><a href="#job3" onclick="showJobDetail('job3')">Job Opening 3: Description</a></li>
+                        </ul>
+                    `;
+                    break;
+                case 'contact':
+                    mainContent.innerHTML = `
+                        <h1>Contact Us</h1>
+                        <p>Get in touch with us for more information.</p>
+                    `;
+                    break;
+                default:
+                    mainContent.innerHTML = `
+                        <h1>Welcome to Our Website</h1>
+                        <p>This is the main content area where you can add your content.</p>
+                    `;
+            }
+        }
+
+        function showJobDetail(job) {
+            const mainContent = document.getElementById('main-content');
+            switch(job) {
+                case 'job1':
+                    mainContent.innerHTML = `
+                        <h1>Job Opening 1</h1>
+                        <p>Details about Job Opening 1.</p>
+                        <a href="#careers" onclick="showContent('careers')">Back to Careers</a>
+                    `;
+                    break;
+                case 'job2':
+                    mainContent.innerHTML = `
+                        <h1>Job Opening 2</h1>
+                        <p>Details about Job Opening 2.</p>
+                        <a href="#careers" onclick="showContent('careers')">Back to Careers</a>
+                    `;
+                    break;
+                case 'job3':
+                    mainContent.innerHTML = `
+                        <h1>Job Opening 3</h1>
+                        <p>Details about Job Opening 3.</p>
+                        <a href="#careers" onclick="showContent('careers')">Back to Careers</a>
+                    `;
+                    break;
+                default:
+                    mainContent.innerHTML = `
+                        <h1>Careers</h1>
+                        <p>Explore career opportunities with us.</p>
+                        <ul>
+                            <li><a href="#job1" onclick="showJobDetail('job1')">Job Opening 1: Description</a></li>
+                            <li><a href="#job2" onclick="showJobDetail('job2')">Job Opening 2: Description</a></li>
+                            <li><a href="#job3" onclick="showJobDetail('job3')">Job Opening 3: Description</a></li>
+                        </ul>
+                    `;
+            }
+        }
+    </script> -->
+  </body>
+</html>

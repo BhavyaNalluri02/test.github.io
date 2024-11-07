@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size:14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header, main, footer {
+    padding: 20px;
+   
+}
+main{
+    height: calc(100vh - 170px);
+    overflow: auto;
+}
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 20px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    display: inline-block;
+   
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    min-width: 160px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.col-lg-6 {
+    width:50%;
+    z-index: 1;
+}
+a {
+    color: #0071b8;
+}
+#feature-container:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%;
+    width: 100vw;
+    background-color: #0079C2;
+    background-image: url("./hp_background_icons.png");
+    background-size: contain;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.sidebar {
+    flex: 1;
+    max-width: 250px;
+    margin-right: 20px;
+}
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #007bff;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar a:hover {
+    background-color: #f8f9fa;
+}
+.content {
+    flex: 3;
+    min-width: 300px;
+}
+.content h1 {
+    margin-top: 0;
+}
+.breadcrumb {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+}
+.job-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.job-section img {
+    max-width: 100%;
+    height: auto;
+}
+.job-info {
+    flex: 1;
+    padding-left: 20px;
+    border: 1px solid #f5f5f5;
+    border-top: 5px solid orange;
+    padding-top: 10px;
+}
+.job-info h2 {
+    margin-top: 0;
+}
+.job-info p {
+    margin: 10px 0;
+}
+.job-info h2 a {
+    color:#000;
+    text-decoration: none;
+
+}
+.job-info h2 a:hover, .job-info h2 a:hover, .job-info h3 a:active, .job-info h2 a:active {
+    color: #e07700;
+    text-decoration: none;
+}
+.job-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.job-section img {
+    max-width: 100%;
+    height: auto;
+}
+.job-info {
+    flex: 1;
+    margin-left: 20px;
+}
+.job-info h2 {
+    margin-top: 0;
+}
+.job-info p {
+    margin: 10px 0;
+}
+.search-jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top:0;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.job-list {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 10px;
+}
+.job-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.job-item >div>a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #000;
+    text-decoration: underline;
+    width: 78%;
+    display: inline-block;
+}
+.job-item button {
+    background-color: #fff;
+}
+.job-item button a {
+    text-decoration: none;
+    background-color: #fff;
+}
+.job-item p {
+    margin: 5px 0;
+}
+body, h1, h2, h3, h4, h5, h6  {
+    font-family:  Helvetica, sans-serif ;
+  }
